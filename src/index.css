@@ -1,0 +1,55 @@
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.2%;
+}
+body {
+    transition: background-color 0.3s ease;
+      font-family: 'Comic Neue';
+	color: var(--dark-mode-text);
+  background-color: #F2F4F7;
+  }
+  
+  body.no-scroll {
+    overflow: hidden;
+  }
+  :root{
+    --dark-mode-bg: rgba(0, 0, 0, 0.292);
+    --dark-mode-text: #fff;
+    --dark-main-container-liner-1: white;  
+    --dark-main-container-liner-2: #18191B;  
+    --dark-mode-nav-bg: #353a3d49;
+    --dark-mode-yellow: #FDB224;
+    --dark-mode-percent-bg : #012237; 
+    --dark-mode-percent-bg-linear-1: #dc7b0c;
+    --dark-mode-percent-bg-linear-2: #fff973 ;
+    --dark-mode-footer-bg: #161D22 ;
+    --dark-mode-footer-btn-text: #bcbcc3 ;
+    --dark-mode-footer-bg-active: #3636367e ;
+    --dark-mode-footer-active-text-clr:  rgba(255, 255, 255, 0.86)  ;
+    --dark-mode-form-popup-bg: #171A1D;
+    --dark-mode-form-popup-btn-bg: rgba(255, 255, 255, 0.036);
+    --dark-mode-click-bg: #27292cb8;
+    --dark-mode-coin-collect: rgba(0, 0, 0, 0.17);
+    --dark-mode-icon-tick: 	#22bb33;
+    --dark-mode-timer-text-color: rgb(234, 64, 64);
+  }
+  .table_head{
+    background-color: var(  --dark-mode-click-bg);
+  }
+  .table_head tr th{
+    color: var( --dark-mode-text);
+
+  }
+  .table_body{
+    background-color: var(    --dark-mode-coin-collect);
+    color: var(  --dark-mode-footer-btn-text) ;
+  }
+  

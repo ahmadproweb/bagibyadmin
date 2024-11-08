@@ -1,0 +1,336 @@
+/* youtube.css */
+
+.youtube {
+    position: relative;
+  }
+  
+  .youtube .searchBtn  {
+    margin-top: 3rem;
+  }
+  .inputMain{
+    height: 4rem;
+    background-color: #FFFFFF;
+    width: 35rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-inline: 2rem;
+  
+}
+
+
+.inputMain input{
+    border: none;
+    outline: none;
+    color: black;
+    background: none;
+    width: 100%;
+}
+.inputMain input::placeholder{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.inputMain button{
+    background: none;
+    border: none;
+    outline: none;
+    color: var(	--dark-mode-footer-btn-text);
+    font-size: 2rem;
+}
+  .searchBtn .btn2 {
+    background: #C1A381;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+  
+  body.no-scroll {
+    overflow: hidden;
+  }
+  
+  .youtubeFormFill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .youtubeFormFill h1{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .CrossIcons {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: var(--dark-mode-footer-btn-text) ;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.108);
+    padding: 4rem 3rem;
+    height: 59rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 1001;
+    color: var( --dark-mode-footer-btn-text);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50rem;
+    overflow-y: scroll !important;
+  }
+  .popup button{
+    margin-top: 2rem;
+  }
+  .inputYoutube label {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .inputYoutube :is( input, textarea , select){
+    border: 1px solid #C1A381;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.4rem;
+    height: 3rem;
+    line-height: 1.25rem;
+    background-color: var(--dark-mode-nav-bg);
+    margin-block: 1rem;
+    color: var(--dark-mode-text);
+    padding: 0.25rem 0.5rem;
+  padding-inline: 1rem;
+    width: 100%;
+    transition: all 0.25s;
+  }
+  .inputYoutube input[type="file"] {
+    border: none;
+    background: none;
+
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #C1A381;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+}
+
+  .inputYoutube input::placeholder{
+  color: var(	--dark-mode-footer-btn-text);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+  .inputYoutube textarea {
+    height: 7rem;
+    padding-top: 1rem;
+  }
+  
+  .inputYoutube button {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #C1A381;
+    color: aliceblue;
+    padding: 0.5rem 2.4rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;font-weight: 600;
+    cursor: pointer;
+  }
+  
+
+
+
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.tables {
+  width: 100%;
+  background: var( --dark-mode-coin-collect);
+}
+
+
+.tables-row {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #C1A381;
+}
+
+.tables-data{
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.icon-up-de {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 2rem;
+    position: relative;
+    left: 4rem;
+}
+.icon-up-de button{
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    cursor: pointer;
+    width:  2rem;
+    /* background-color: white; */
+}
+.icon-up-de button:nth-child(1){
+  color: var(    --dark-mode-yellow)  ;
+  font-size: 1.6rem;
+}
+.icon-up-de button:nth-child(2){
+  color: var( --dark-mode-percent-bg-linear-2);
+    font-size: 1.7rem;
+}
+
+.tables-data {
+    font-size: 1.4rem;
+  }
+
+  /* youtube.css */
+
+.confirmation-dialog {
+    position: fixed;
+    top: 30%;
+    left: 45%;
+    transform: translate(-30%, -45%);
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 1000;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirmation-dialog p {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .confirmation-dialog .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .confirmation-dialog button {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    background: var(--dark-mode-yellow);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .slideshow-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

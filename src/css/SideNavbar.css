@@ -1,0 +1,186 @@
+.sideNavbarMain {
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.sideNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    gap: 3rem;
+    padding-top: 4rem;
+    width: 20rem;
+    transition: width 0.3s ease;
+    background-color: var(--dark-main-container-liner-1);
+}
+
+
+
+.sideNavbar button {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: none;
+    color: black;
+    width: 13rem;
+    border-radius: 3rem;
+    padding-left: 1rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    gap: 1rem;
+    text-align: start;
+}
+
+.sideNavbar .active {
+    background-color: #F1F1F1;
+    color: black;
+    transition: 500ms ease-in-out;
+}
+
+.flexData {
+    width: calc(100% - 20rem);
+    padding: 2rem 4rem;
+}
+
+.sideNavbar.collapsed {
+    width: 0;
+    padding-inline: 0;
+    overflow: hidden;
+}
+
+.flexData.collapsed {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.iconSide {
+    font-size: 4rem;
+    cursor: pointer;
+    width: 4rem;
+    color: #C1A381;
+}
+
+.ineerProfile {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ineerProfile.show {
+    display: flex;
+}
+
+.ineerProfile h2 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.ineerProfile button {
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.main-slideshow {
+    color: black;
+}
+
+.main-slideshow h2 {
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.slide {
+    padding: 10px;
+    color: black;
+    position: relative;
+}
+
+.slide img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slide button {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.main-slideshow .upload {
+    background-color: #C1A381;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+
+.loading-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+    height: calc(100dvh - 50dvh);
+    flex-direction: column;
+    text-transform: capitalize;
+    color: black;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-size: 4rem;
+    color: black;
+    padding: 0 5px 8px 0;
+    background: repeating-linear-gradient(90deg, currentColor 0 8%, #0000 0 10%) 200% 100%/200% 3px no-repeat;
+    position: relative;
+    left: 35%;
+    margin-top: 5rem;
+    animation: l3 2s steps(6) infinite;
+}
+
+@keyframes l3 {
+    to {
+        background-position: 80% 100%
+    }
+}
+
+.Total {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}

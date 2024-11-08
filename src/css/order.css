@@ -1,0 +1,212 @@
+/* Orders Container */
+
+
+.orders-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Order Card */
+.order-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.order-card h4{
+    color: black;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.order-card h3 {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    margin: 5px 0;
+    font-size: 1.9rem;
+    line-height: 1.6;
+    color: black;
+}
+.order-card  .last{
+    color: red;
+    font-weight: 600;
+}
+
+.order-card p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-card strong {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Items List */
+.order-card ul {
+    list-style-type: none;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.order-card li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.order-card li div{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.order-card li:last-child {
+    border-bottom: none;
+}
+
+/* Product Image */
+.order-card img {
+    width: 10rem;
+    cursor: pointer;
+    height: 10rem;
+    border-radius: 4px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Hide body scroll when fullscreen overlay is active */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Fullscreen Image */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.fullscreen-overlay img:hover {
+    transform: scale(1.05);
+}
+
+.fullscreen-overlay:after {
+    content: 'Click anywhere to close';
+    color: #fff;
+    position: absolute;
+    bottom:2rem ;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.fullscreen-overlay img {
+    max-width: 80%;
+    max-height: 60%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.thumbnail-row img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-row img:hover {
+    transform: scale(1.1);
+}
+.thumbnail-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+.main-image{
+    margin-block: 1rem;
+}
+
+.delete{
+    color: red !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    font-size: 3rem !important;
+}
+.product-data , .product-image{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 0rem;
+}
+.product-image .product-inner{
+    display: flex;
+    flex-direction: column;
+}
+.product-data p{
+    margin-bottom: 0rem;
+}
+.product-data h3{
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 0px;
+}
