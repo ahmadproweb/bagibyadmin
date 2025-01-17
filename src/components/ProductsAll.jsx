@@ -50,7 +50,6 @@ const AllAccount = ({ products, setProducts, loading }) => {
   const filteredData = products.filter(
     (product) =>
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.filterProducts.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (product._id &&
         product._id.toString().toLowerCase().includes(searchTerm.toLowerCase()))
   );
@@ -109,10 +108,6 @@ const AllAccount = ({ products, setProducts, loading }) => {
                       </p>
                       <p>
                         <strong>Discount Price:</strong> {product.discountPrice}
-                      </p>
-                      <p>
-                        <strong>Filter Products:</strong>{" "}
-                        {product.filterProducts}
                       </p>
                       <p>
                         <strong>Stars:</strong>{" "}

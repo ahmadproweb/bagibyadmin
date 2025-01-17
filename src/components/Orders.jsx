@@ -3,7 +3,7 @@ import "../css/order.css";
 import toast from "react-hot-toast";
 
 const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;
-
+const DELIVERY_CHARGE = 200;
 function Orders() {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -130,6 +130,10 @@ function Orders() {
                 ))}
               </ul>
 
+              <p className="last">
+              <strong>Delivery Charges:</strong>  {DELIVERY_CHARGE}
+
+              </p>
               <p className="last">
                 <strong>Total Price :</strong> {order.total}
               </p>

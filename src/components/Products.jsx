@@ -4,6 +4,7 @@ import "../css/accountStyle.css";
 import PopForm from "./popForm";
 import AllAccount from "./ProductsAll";
 
+
 const Products = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [products, setProducts] = useState([]);
@@ -25,15 +26,8 @@ const Products = () => {
         const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/products`);
         const data = await response.json();
         // console.log("Fetched products:", data);
-      toast.error(data.message);
-
-
         setProducts(data);
-      } catch (error) {
-        // console.error("Failed to fetch products:", error);
-      toast.error(data.message);
-
-      }finally{
+      } finally{
         setLoading(false);  
       }
     };

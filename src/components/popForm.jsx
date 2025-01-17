@@ -14,7 +14,6 @@ const PopForm = ({ togglePopup, updateProducts }) => {
     fakeSold: "",
     discountPrice: "",
     description: "",
-    filterProducts: "",
   });
   const [loading, setLoading] = useState(false);
   const [mainImage, setMainImage] = useState(null);
@@ -50,7 +49,6 @@ const PopForm = ({ togglePopup, updateProducts }) => {
     const data = new FormData();
     data.append("homeProduct", formData.homeProduct);
     data.append("title", formData.title);
-    data.append("filterProducts", formData.filterProducts);
     data.append("mainPrice", formData.mainPrice);
     data.append("star", formData.star);
     data.append("fakeSold", formData.fakeSold);
@@ -97,7 +95,6 @@ const PopForm = ({ togglePopup, updateProducts }) => {
       setFormData({
         homeProduct: "",
         title: "",
-        filterProducts: "",
         mainPrice: "",
         star: "",
         fakeSold: "",
@@ -145,27 +142,6 @@ const PopForm = ({ togglePopup, updateProducts }) => {
             placeholder="Enter product title"
             required
           />
-        </div>
-        <div className="inputYoutube">
-          <label>Filter Products:</label>
-          <select
-            name="filterProducts"
-            value={formData.filterProducts}
-            onChange={handleInputChange}
-          >
-            <option value="">Select a category</option>
-            <option value="hand bags">hand bags</option>
-            <option value="laptop bags">laptop bags</option>
-            <option value="canvas bags">canvas bags</option>
-            <option value="back packs">back packs</option>
-            <option value="phone pouch">phone pouch</option>
-            <option value="Vegas Blue">Vegas Blue</option>
-            <option value="clutch">clutch</option>
-            <option value="tote bags">tote bags</option>
-            <option value="cross body">cross body</option>
-            <option value="shoulder bags">shoulder bags</option>
-            <option value="chain bags">chain bags</option>
-          </select>
         </div>
         <div className="inputYoutube">
           <label>Fake Sold :</label>
