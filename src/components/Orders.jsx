@@ -65,12 +65,6 @@ function Orders() {
                 {order.customerName.last}
               </p>
               <p>
-                <strong>Email : </strong>{" "}
-                <a href={`mailto:${order.contact.email}`}>
-                  {order.contact.email}
-                </a>
-              </p>
-              <p>
                 <strong>Phone : </strong>
                 <a href={`tel:+${order.contact.phone.replace(/^0/, "92")}`}>
                   +{order.contact.phone.replace(/^0/, "92")}
@@ -101,9 +95,6 @@ function Orders() {
                 <strong>Address : </strong> {order.address.addressComplete} ,
                 <strong> Near {order.address.famousPlace || "Nothing"}</strong> ,{" "}
                 {order.address.city} -{" "}
-                <strong>
-                  Postal Code : {order.address.postalCode || "Nothing"}
-                </strong>
               </p>
               <h4>Items : </h4>
               <ul>
